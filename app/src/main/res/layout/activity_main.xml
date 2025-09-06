@@ -14,6 +14,20 @@
         android:padding="16dp"
         tools:context=".MainActivity">
 
+        <!-- Name and Roll Number (Header) -->
+        <TextView
+            android:id="@+id/studentInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C123 Seeddharth"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
         <!-- RecyclerView for chat messages -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewMessages"
@@ -21,7 +35,7 @@
             android:layout_height="0dp"
             android:clipToPadding="false"
             android:padding="8dp"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/studentInfo"
             app:layout_constraintBottom_toTopOf="@+id/bottomBar"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
